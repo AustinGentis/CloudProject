@@ -1,8 +1,9 @@
 # CloudProject
 
 ## Description
-This project was origonaly ment to deploy a website that would be able to lanch a container with a minecraft server on it and start the server. As of this point in the project I am able to do the following.
+This project was origonaly ment to deploy a website that would be able to lanch a container with a minecraft server on it and start the server.
 ### Current Project
+ As of this point in the project I am able to do the following.
 - Create a new resource group
 - Create a App Service plan
 - Create a App Service
