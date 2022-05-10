@@ -1,0 +1,16 @@
+location="East US"
+resourceGroup="rg-gentis"
+tag="deploy-github.sh"
+appServicePlan="agentis"
+webapp="agentishell"
+ContainerName="minecraftgentis"
+ContainerIP="
+# Create a web app.
+echo "Creating $webapp"
+az group create --name $resourceGroup --location "$location" 
+az appservice plan create --name $appServicePlan --resource-group $resourceGroup --sku FREE
+az webapp create --name $webapp --resource-group $resourceGroup --plan $appServicePlan
+az webapp deployment source config --name $webapp --resource-group $resourceGroup \
+--repo-url https://github.com/KalleDania/ASP.NET-Website-with-login  --branch master --manual-integration
+site="http://$webapp.azurewebsites.net"
+az container create --name $ContainerName --resource-group $resourceGroup --image itzg/minecraft-server --dns-name-label mineag --ports 25565 22 --ip-address public
