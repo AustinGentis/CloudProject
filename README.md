@@ -22,6 +22,6 @@ Reliablity is probably the weakest link because as it stands none of the resourc
 #### Operational Excellence
 With the deployment of the resources being automated the chances of something going wrong is a lot lower.
 #### Preformance Efficiency
-
+I have none
 #### Security
 For security my website does require you to login however it is not curreny configured. As for the container the only port that are open on it by default.
