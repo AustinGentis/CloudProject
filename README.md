@@ -18,7 +18,7 @@ This would be done by having a link/button on the website trigger a action to wr
 I used a Container for my server instead of a full vm because it was a 1/4 the price per month ($3.5 compared to $14).
 I also used the free tier for my app service plan.
 #### Reliablity
-Reliablity is probably the weakest link because as it stands none of the resources have fail over how every if a resource goes down the others could function mostly independent.
+Reliablity is probably the second weakest link because as it stands none of the resources have fail over how every if a resource goes down the others could function mostly independent.
 #### Operational Excellence
 With the deployment of the resources being automated the chances of something going wrong is a lot lower.
 #### Preformance Efficiency
